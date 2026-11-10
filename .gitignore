@@ -1,0 +1,10 @@
+# secrets
+.env
+.env.*
+!.env.example
+# local logs / caches
+*.log
+*.log.jsonl
+__pycache__/
+.DS_Store
+dist/

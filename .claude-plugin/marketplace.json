@@ -1,0 +1,14 @@
+{
+  "name": "grokbot-lab",
+  "owner": { "name": "agentasy" },
+  "description": "Skills for Claude Code ⇄ xAI Grok Bot collaboration (protocol v0.1).",
+  "plugins": [
+    {
+      "name": "grokbot-collab",
+      "source": "./",
+      "description": "Delegate tasks to Grok Bot over its routine webhook and verify the pong receipts (Claude Code side).",
+      "version": "0.1.1-draft",
+      "skills": ["./skills/grokbot-collab"]
+    }
+  ]
+}

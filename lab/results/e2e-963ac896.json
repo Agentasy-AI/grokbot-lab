@@ -1,0 +1,73 @@
+[
+  {
+    "scenario": "check_render",
+    "id": "2ec62ee7-d066-49c0-ac15-faf9b1f161dd",
+    "http": 200,
+    "runUuid": "c0c8d057-c2d1-43cc-ad74-53e822575a64",
+    "rtt_s": 143.5,
+    "errors": [],
+    "pong": {
+      "type": "pong",
+      "v": "0.1",
+      "id": "2ec62ee7-d066-49c0-ac15-faf9b1f161dd",
+      "task": "check_page",
+      "status": "ok",
+      "result": {
+        "method": "render",
+        "pass": true,
+        "findings": [
+          "Main heading \"Your fantasy, executed.\" is fully visible in the first viewport without scrolling.",
+          "Dominant background colour behind the main heading is medium royal blue, approximately #1d3f9e, with a faint lighter-blue grid.",
+          "Rendered in a real browser; page content viewport was 1920x1072 rather than the requested 1280x800. The heading occupies roughly y=128-400 and remains fully on screen without scrolling."
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "screenshot_chat",
+          "value": "2ec62ee7-d066-49c0-ac15-faf9b1f161dd"
+        }
+      ],
+      "message": "The main heading is visible without scrolling on a medium royal-blue gridded background.",
+      "finished_at": "2026-11-10T02:21:40Z",
+      "agent_version": "0.1.2-draft"
+    }
+  },
+  {
+    "scenario": "check_http",
+    "id": "5f5e5b13-ebac-4ffb-b8c8-48cad4f97351",
+    "http": 200,
+    "runUuid": "9661ee80-65db-4319-855f-62b5b0c9f1bd",
+    "rtt_s": 37.8,
+    "errors": [],
+    "pong": {
+      "type": "pong",
+      "v": "0.1",
+      "id": "5f5e5b13-ebac-4ffb-b8c8-48cad4f97351",
+      "task": "check_page",
+      "status": "ok",
+      "result": {
+        "method": "http",
+        "pass": true,
+        "findings": [
+          "GET https://agentasy.ai/ returned HTTP 200, content-type text/html, 24960 bytes, 0 redirects, in 0.100s.",
+          "Response is a complete HTML document (doctype, </html>) titled \"Agentasy — Your fantasy, executed.\" with <main> and an h1 \"Your fantasy, executed.\"",
+          "No captcha, Cloudflare challenge, 404/500, or error-page markers were present.",
+          "expect \"page loads without errors\": pass"
+        ]
+      },
+      "evidence": [
+        {
+          "kind": "url",
+          "value": "https://agentasy.ai/"
+        },
+        {
+          "kind": "quote",
+          "value": "HTTP/2 200; content-type: text/html; title: Agentasy — Your fantasy, executed."
+        }
+      ],
+      "message": "https://agentasy.ai/ returned HTTP 200 with a complete homepage, so the page-loads-without-errors check passed.",
+      "finished_at": "2026-11-10T02:19:56Z",
+      "agent_version": "0.1.2-draft"
+    }
+  }
+]
